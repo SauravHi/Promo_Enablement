@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./styles.css";
+import BasicSelect from "./component/Dropdown";
+import OutlinedButton from "./component/Button";
+import ButtonAppBar from "./component/Header";
+import MyFormHelperText from "./component/TextField";
+import Footer from "./component/Footer";
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonAppBar />
+      <div style={{ display: "flex", justify: "center" }}>
+        <BasicSelect Label="DataType" />
+        <BasicSelect Label="DataType 2" />
+        <BasicSelect Label="DataType 3" />
+      </div>
+      <div style={{ display: "flex", justify: "center"}}>
+        <MyFormHelperText />
+        <MyFormHelperText />
+      </div>
+      <OutlinedButton />
+      <Footer />
     </div>
   );
 }
-
-export default App;
