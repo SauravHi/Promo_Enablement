@@ -9,7 +9,7 @@ export default function OutlinedButtons() {
     <div>
       <Stack direction="row" spacing={2}>
         <Grid container justify="center">
-          <Button variant="outlined" sx={{ m: 1, minWidth: 180 }}>
+          <Button variant="contained" sx={{ m: 1, minWidth: 180 }}>
             Submit
           </Button>
         </Grid>
