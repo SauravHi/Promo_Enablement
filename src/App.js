@@ -12,12 +12,13 @@ export default function App() {
       <div style={{display:"flex"}}>
       <div className="i-left">
       {/* style={{ display: "flex", justify: "center" }} */}
-        <BasicSelect Label="DataType" />
+        <BasicSelect Label="TEMS" />
+        <BasicSelect Label="DataType 1" />
         <BasicSelect Label="DataType 2" />
         <BasicSelect Label="DataType 3" />
         <div>
-        <MyFormHelperText />
-        <MyFormHelperText />
+        <MyFormHelperText  name="Addrress Reference"/>
+        <MyFormHelperText name="Post Code"/>
         <OutlinedButton />
       </div>
       </div>
